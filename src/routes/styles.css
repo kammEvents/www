@@ -1,0 +1,54 @@
+@import '@fontsource/fira-sans';
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+	background-image: url('/background.jpg');
+	background-size: cover;
+	background-repeat: repeat;
+	height: 100vh;
+	color: white;
+	font-family: 'Fira Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+.app {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a, a:visited {
+	color: white;
+}
+
+h1, h2 {
+	text-shadow: 2px 1px 2px rgb(255, 0, 140), -1px 0 1em rgb(0, 102, 255), 0 0 0.2em rgb(0, 255, 89);
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.row {
+	display: flex;
+}
+
+@media (max-width: 400px) {
+	:root {
+		font-size: 10pt;
+	}
+}
+
+@media (max-width: 360px) {
+	:root {
+		font-size: 8pt;
+	}
+}
