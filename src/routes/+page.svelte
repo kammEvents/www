@@ -5,7 +5,7 @@
 	<title>kammEvents</title>
 	<meta name="description" content="kammEvents" />
 	<meta property="og:title" content="kammEvents" />
-	<meta property="og:image" content="/thumbnail.jpg">
+	<meta property="og:image" content="https://kammevents.de/thumbnail.jpg">
 </svelte:head>
 
 <section>
