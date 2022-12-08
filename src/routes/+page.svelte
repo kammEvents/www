@@ -4,6 +4,8 @@
 <svelte:head>
 	<title>kammEvents</title>
 	<meta name="description" content="kammEvents" />
+	<meta property="og:title" content="kammEvents" />
+	<meta property="og:image" content="/thumbnail.jpg">
 </svelte:head>
 
 <section>
