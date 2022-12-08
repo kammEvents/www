@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/configure-pages@v1
+      - uses: actions/configure-pages@v2
         id: pages
       - uses: pnpm/action-setup@v2
         with:
@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
-      - run: pnpm ci
+      - run: pnpm install --frozen-lockfile
       - run: pnpm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
