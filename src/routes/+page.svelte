@@ -9,11 +9,12 @@
 </svelte:head>
 
 <section>
-<h1>kammEvents</h1>
-<div class="row">
-	<div class="col"><h2>Drone</h2></div>
-	<div class="col"><h2>Videography</h2></div>
-	<div class="col"><h2>Livestream</h2></div>
+<div class="header"><h1>kammEvents</h1></div>
+<div class="col c1"><h2>Drone</h2></div>
+<div class="col c2"><h2>Videography</h2></div>
+<div class="col c3"><h2>Livestream</h2></div>
+<div class="social">
+	<a href="https://instagram.com/kevent_official"><i class="si si-instagram"></i></a>
 </div>
 </section>
 
@@ -21,12 +22,38 @@
 	h1 {
 		text-align: center;
 	}
+	section {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: 1fr min-content 1fr; 
+		gap: 1rem 0px; 
+		grid-template-areas:
+			"header header header"
+			"c1 c2 c3"
+			"social social social";
+	}
+
+	.header { grid-area: header; }
+	.c1 { grid-area: c1; }
+	.c2 { grid-area: c2; }
+	.c3 { grid-area: c3; }
+	.social {
+		grid-area: social;
+		font-size: 2rem;
+	}
+
 	.col {
 		padding: 0 1rem;
 		border-right: 2pt solid white;
+		height: 4rem;
 	}
-
-	.col:last-child {
+	.c1 {
+		text-align: right;
+	}
+	.c2, .social, .header {
+		text-align: center;
+	}
+	.c3 {
 		border-right: none;
 	}
 </style>

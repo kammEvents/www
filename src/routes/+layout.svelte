@@ -1,5 +1,6 @@
 <script>
 	import './styles.css';
+	import 'simple-icons-font/font/simple-icons.css';
 </script>
 
 <div class="app">
