@@ -15,6 +15,7 @@
 <div class="col c3"><h2>Livestream</h2></div>
 <div class="social">
 	<a href="https://instagram.com/kevent_official"><i class="si si-instagram"></i></a>
+	<a href="https://www.youtube.com/@kevent2954"><i class="si si-youtube"></i></a>
 </div>
 </section>
 
@@ -40,6 +41,10 @@
 	.social {
 		grid-area: social;
 		font-size: 2rem;
+	}
+
+	.social a:first-child {
+		margin-right: 1rem;
 	}
 
 	.col {
